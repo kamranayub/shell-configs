@@ -1,12 +1,12 @@
+#requires -modules posh-git, OpenWeatherMap, BetterCredentials
+
+Import-Module BetterCredentials
+Import-Module posh-git
+Import-Module OpenWeatherMap
+
 $WeatherApiKey = $null
 $ContribDir = "C:\Development\Contrib"
 $JunkDir = "C:\Development\Junk"
-
-# REQUIRED: Install globally via Install-Module posh-git
-Import-Module posh-git
-
-# REQUIRED: Install globally via Install-Module OpenWeatherMap
-Import-Module OpenWeatherMap
 
 Function Write-LocalWeatherCurrent([switch]$Inline) {
     # Replace city and API key
@@ -39,6 +39,10 @@ function Prompt() {
     return " "
 }
 
+#
+# Aliases
+#
+
 function Contrib() {
     cd $ContribDir
 }
@@ -47,7 +51,9 @@ function Junk() {
     cd $JunkDir
 }
 
-# Aliases
+function gcr() {
+  return Get-Credential -Inline @args
+}
+
 Set-Alias which Get-Command
-Set-Alias gcr Get-Credential
 Set-Alias of Out-File
