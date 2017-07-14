@@ -1,0 +1,16 @@
+{
+  "editor.fontSize": 17,
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "files.autoSave": "afterDelay",
+  "git.confirmSync": false,
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vs-nomo-dark",
+  "editor.minimap.enabled": true,
+  "editor.renderIndentGuides": true,
+  "workbench.activityBar.visible": true,
+  "git.enableSmartCommit": true
+}
