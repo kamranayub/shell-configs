@@ -12,6 +12,9 @@
   "editor.renderIndentGuides": true,
   "workbench.activityBar.visible": true,
   "git.enableSmartCommit": true,
-  "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.colorTheme": "Material Theme Palenight"
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorTheme": "Material Theme",
+  "materialTheme.cache.workbench.settings": {
+    "themeColours": "Palenight"
+  }
 }
