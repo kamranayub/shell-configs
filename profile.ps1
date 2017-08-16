@@ -57,3 +57,17 @@ function gcr() {
 
 Set-Alias which Get-Command
 Set-Alias of Out-File
+
+# Custom helpers
+function grep($match, $file) {
+    if (!$file) {
+        gci -r -File | % {
+            $matches = $_ | gc | ? { $_ -match $match }
+            if ($matches) {
+                [pscustomobject]@{ File = $_.FullName; Matches = $matches }
+            }
+        }
+    } else {
+        gc $file | ? { $_ -match $match }
+    }
+}
