@@ -1,4 +1,7 @@
 {
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Material Theme Palenight",
+  "editor.formatOnSave": true,
   "editor.fontSize": 17,
   "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -7,14 +10,8 @@
   "editor.detectIndentation": false,
   "files.autoSave": "afterDelay",
   "git.confirmSync": false,
-  "window.zoomLevel": 1,  
   "editor.minimap.enabled": true,
   "editor.renderIndentGuides": true,
   "workbench.activityBar.visible": true,
-  "git.enableSmartCommit": true,
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.colorTheme": "Material Theme",
-  "materialTheme.cache.workbench.settings": {
-    "themeColours": "Palenight"
-  }
+  "git.enableSmartCommit": true
 }
